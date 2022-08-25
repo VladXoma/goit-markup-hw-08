@@ -1,0 +1,33 @@
+$colors: (
+'brand-bg-color': #ffffff,
+'secondary-bg-color': #f5f4fa,
+'black-bg-color': #2f303a,
+'accent-color': #2196f3,
+'brand-text-color': #212121,
+'secondary-text-color': #757575,
+'white-text-color': #ffffff,
+'header-logo-design': #000000,
+'footer-logo-design': #ffffff,
+'hover-focus-social-link-color': #ffffff,
+'footer-links-color': rgba(255, 255, 255, 0.6),
+'footer-social-links-color': rgba(255, 255, 255, 0.1),
+'hero-button-hover-focus-color': #188ce8,
+'border-color': #eeeeee,
+'clients-icons-primary-color': #afb1b8,
+'brand-bg-modal-color': #ffffff,
+'brand-hover-focus-overlay-color': rgba(33, 150, 243, 0.9),
+'work-list-title-bg-color': rgba(47, 48, 58, 0.8),
+'backdrop-modal-bg-color': rgba(0, 0, 0, 0.2)
+);
+
+@function getColor($key) {
+@return map-get($colors, $key);
+}
+
+$fontFam: (
+'Raleway': Raleway,
+'Roboto': Roboto);
+
+@function getFontFam($key) {
+    @return map-get($fontFam, $key);
+}

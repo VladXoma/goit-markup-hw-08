@@ -1,0 +1,20 @@
+.logo {
+    @include fontStyle(26px,1.19,0.03em);
+    font-family: getFontFam(Raleway);
+    font-weight: 700;
+    color: getColor('accent-color');
+}
+
+.header-logo {
+    margin-right: 93px;
+    .logo__design {
+            color: getColor('header-logo-design');
+        }
+}
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    .logo__design {
+            color: getColor('footer-logo-design');
+        }
+}
