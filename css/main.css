@@ -59,10 +59,24 @@ address {
 }
 
 .container {
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -470,20 +484,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-}
-
-.features-cards {
-  -ms-flex-preferred-size: 270px;
-  flex-basis: 270px;
 }
 
 .features-cards__icon {
