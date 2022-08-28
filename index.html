@@ -16,46 +16,55 @@
     <!--Шапка-->
     <header class="header">
         <div class="header__container container">
-            <nav class="header-nav">
-                <a class="logo header-logo link" lang="en" href="./index.html">
+            <a class="logo header-logo link" lang="en" href="./index.html">
                     Web<span class="logo__design">Studio</span>
                 </a>
-                <ul class="header-links list">
-                    <li class="header-links__item"> <a class="header-links__link link current" href="./index.html">Студия</a></li>
-                    <li class="header-links__item"> <a class="header-links__link link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="header-links__item"> <a class="header-links__link link" href="">Контакты</a></li>
+            <button class="menu-btn is-open" data-menu-button>
+                <svg wight="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="menu-btn__icon-open" href="./images/icons.svg#icon-open-menu"></use>
+                    <use class="menu-btn__icon-close" href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-container">
+                <nav class="header-nav">
+                    <ul class="header-links list">
+                        <li class="header-links__item"> <a class="header-links__link link current" href="./index.html">Студія</a></li>
+                        <li class="header-links__item"> <a class="header-links__link link" href="./portfolio.html">Портфоліо</a></li>
+                        <li class="header-links__item"> <a class="header-links__link link" href="">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="contact-list list">
+                    <li class="contact-list__item">
+                        <a class="contact-list__link link" href="mailto:info@devstudio.com">
+                            <svg class="contact-list__icon" width="16px" height="12px">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <a class="contact-list__link link" href="tel:+380961111111">
+                            <svg class="contact-list__icon" width="10px" height="16px">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="contact-list list">
-                <li class="contact-list__item">
-                    <a class="contact-list__link link" href="mailto:info@devstudio.com">
-                    <svg class="contact-list__icon" width="16px" height="12px">
-                        <use href="./images/icons.svg#envelope"></use>
-                    </svg>
-                    info@devstudio.com</a>
-                </li>
-                <li class="contact-list__item">
-                    <a class="contact-list__link link" href="tel:+380961111111">
-                    <svg class="contact-list__icon" width="10px" height="16px">
-                        <use href="./images/icons.svg#smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a></li>
-            </ul>
+            </div>
         </div>
     </header>
         <!--Основная информация страницы-->
     <main class="main">
         <!--Основный заголовок и кнопка заказа-->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
-                <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="hero__button" aria-label="Заказать" data-modal-open>Заказать услугу</button>
+                <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
+                <button type="button" class="hero__button" aria-label="Заказать" data-modal-open>Замовити послугу</button>
             </div> 
-        </section>
+        </section> -->
     <!--Особенности-->
-        <section class="features section">
+        <!-- <section class="features section">
             <div class="container">
-                    <h2 class="features__title visually-hidden">Особенности</h2>
+                    <h2 class="features__title visually-hidden">Особливості</h2>
                     <ul class="features__list list">
                         <li class="features-cards">
                             <div class="features-cards__icon">
@@ -63,9 +72,8 @@
                                     <use href="./images/icons.svg#antenna"></use>
                                 </svg>
                             </div>
-                            <h3 class="features-cards__title">Внимание к деталям</h3>
-                            <p class="features-cards__text">Идейные соображения, а также начало повседневной работы по
-                                формированию позиции.</p>
+                            <h3 class="features-cards__title">Увага до деталей</h3>
+                            <p class="features-cards__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                         </li>
                         <li class="features-cards">
                             <div class="features-cards__icon">
@@ -73,9 +81,8 @@
                                     <use href="./images/icons.svg#clock"></use>
                                 </svg>
                             </div>
-                            <h3 class="features-cards__title">Пунктуальность</h3>
-                            <p class="features-cards__text">Задача организации, в особенности же рамки и место обучения кадров
-                                влечет за собой.</p>
+                            <h3 class="features-cards__title">Пунктуальність</h3>
+                            <p class="features-cards__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                         </li>
                         <li class="features-cards">
                             <div class="features-cards__icon">
@@ -83,9 +90,8 @@
                                     <use href="./images/icons.svg#diagram"></use>
                                 </svg>
                             </div>
-                            <h3 class="features-cards__title">Планирование</h3>
-                            <p class="features-cards__text">Равным образом консультация с широким активом в значительной степени
-                                обуславливает.</p>
+                            <h3 class="features-cards__title">Планування</h3>
+                            <p class="features-cards__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                         </li>
                         <li class="features-cards">
                             <div class="features-cards__icon">
@@ -93,43 +99,41 @@
                                     <use href="./images/icons.svg#astronaut"></use>
                                 </svg>
                             </div>
-                            <h3 class="features-cards__title">Современные технологии</h3>
-                            <p class="features-cards__text">Значимость этих проблем настолько очевидна, что реализация плановых
-                                заданий.</p>
+                            <h3 class="features-cards__title">Сучасні технології</h3>
+                            <p class="features-cards__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                         </li>
                     </ul>
             </div>
- 
-        </section>
+        </section> -->
         <!--Чем мы занимаемся-->
-        <section class="section work">
+        <!-- <section class="section work">
             <div class="container">
-                <h2 class="section-title work__title">Чем мы занимаемся</h2>
+                <h2 class="section-title work__title">Чим ми займаємося</h2>
                 <ul class="work-list list">
                     <li class="work-list__item">
-                        <span class="work-list__title">Десктопные приложения</span>
+                        <span class="work-list__title">Десктопні додатки</span>
                         <img src="./images/what_we_do/01_sites.jpg" width="370" alt="Создание сайтов">
                     </li>
                     <li class="work-list__item">
-                        <span class="work-list__title">Мобильные приложения</span>
+                        <span class="work-list__title">Мобільні додатки</span>
                         <img src="./images/what_we_do/02_mobile_application.jpg" width="370"
                             alt="Создание мобильных приложений">
                     </li>
                     <li class="work-list__item">
-                        <span class="work-list__title">Дизайнерские решения</span>
+                        <span class="work-list__title">Дизайнерські рішення</span>
                         <img src="./images/what_we_do/03_design.jpg" width="370" alt="Веб дизайн">
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Наша команда-->
-        <section class="section team">
+        <!-- <section class="section team">
             <div class="container">
                 <h2 class="section-title team__title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
                         <img class="team-list__img" src="./images/our_team/01_igor_demyanenko.jpg" width="270" alt="Игорь Демьяненко">
-                        <h3 class="team-list__title">Игорь Демьяненко</h3>
+                        <h3 class="team-list__title">Ігор Дем'яненко</h3>
                         <p class="team-list__desc">Product Designer</p>
                         <ul class="team-socials list">
                             <li class="team-socials__item">
@@ -164,7 +168,7 @@
                     </li>
                     <li class="team-list__item">
                         <img class="team-list__img" src="./images/our_team/02_olga_repina.jpg" width="270" alt="Ольга Репина">
-                        <h3 class="team-list__title">Ольга Репина</h3>
+                        <h3 class="team-list__title">Ольга Рєпіна</h3>
                         <p lang="en" class="team-list__desc">Frontend Developer</p>
                         <ul class="team-socials list">
                             <li class="team-socials__item">
@@ -199,7 +203,7 @@
                     </li>
                     <li class="team-list__item">
                         <img class="team-list__img" src="./images/our_team/03_mykola_tarasenko.jpg" width="270" alt="Николай Тарасов">
-                        <h3 class="team-list__title">Николай Тарасов</h3>
+                        <h3 class="team-list__title">Микола Тарасов</h3>
                         <p lang="en" class="team-list__desc">Marketing</p>
                         <ul class="team-socials list">
                             <li class="team-socials__item">
@@ -234,7 +238,7 @@
                     </li>
                     <li class="team-list__item">
                         <img class="team-list__img" src="./images/our_team/04_mikhail_yermakov.jpg" width="270" alt="Михаил Ермаков">
-                        <h3 class="team-list__title">Михаил Ермаков</h3>
+                        <h3 class="team-list__title">Михайло Єрмаков</h3>
                         <p lang="en" class="team-list__desc">Marketing</p>
                         <ul class="team-socials list">
                             <li class="team-socials__item">
@@ -269,10 +273,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="clients section">
+        </section> -->
+        <!-- <section class="clients section">
             <div class="container">
-                <h2 class="section-title clients__title">Постоянные клиенты</h2>
+                <h2 class="section-title clients__title">Постійні клієнти</h2>
                 <ul class="clients-list list">
                     <li class="clients-list__item">
                         <a href="#" class="clients-list__link link">
@@ -318,9 +322,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-   <!--Подвал-->
+<!--Подвал-->
     <footer class="footer">
         <div class="container">
             <div class="communication">
@@ -328,7 +332,7 @@
                     <a class="logo footer-logo link" lang="en" href="/">
                         Web<span class="logo__design">Studio</span>
                     </a>
-                    <address class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <address class="footer-contacts__address">м. Київ, пр-т Лесі Українки, 26</address>
                     <ul class="footer-contacts__list list">
                         <li class="footer-contacts__item"><a class="link footer-contacts__link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -338,7 +342,7 @@
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h2 class="footer-social__title">присоединяйтесь</h2>
+                    <h2 class="footer-social__title">Приєднуйтесь</h2>
                     <ul class="footer-social__list list">
                         <li class="footer-social__item">
                             <a href="#" class="link footer-socials__link">
@@ -372,16 +376,20 @@
                 </div> 
             </div>
                 <form class="footer-subscription" name="subscription-form" autocomplete="on">
-                    <h2 class="footer-subscription__title">Подпишитесь на рассылку</h2>
+                    <h2 class="footer-subscription__title">Підпишись на розсилку</h2>
                     <div class="subscription-field">
+                        <div>
                         <label for="sub-email">
                         </label>
                         <input class="subscription-field__input" type="email" name="email" placeholder="E-mail" id="sub-email">
-                        <button class="subscription-field__button" type="submit">Подписаться
-                            <svg class="icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </button>
+                        </div>
+                        <div class="btn-container">
+                            <button class="subscription-field__button" type="submit">Підписатися
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </form>
         </div>
@@ -393,17 +401,17 @@
                     <use href="./images/icons.svg#close-modal"></use>
                 </svg>
             </button>
-            <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="modal__form" name="service-order" autocomplete="on">
-               <div class="modal__field">               
+                <div class="modal__field">               
                 <input type="text" name="username" id="order-name" class="modal__input">
                 <label for="modal__name" class="modal__label">
-                    Имя
+                    Ім'я
                 </label>
                 <svg class="modal__icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-person-modal"></use>
                 </svg>
-               </div>
+                </div>
                 <div class="modal__field">                   
                     <input type="tel" name="phone-number" id="order-phone" class="modal__input">
                     <label for="order-phone" class="modal__label">
@@ -416,33 +424,34 @@
                 <div class="modal__field">                    
                     <input type="email" name="email" id="order-email" class="modal__input">
                     <label for="order-email" class="modal__label">
-                        Почта
+                        Пошта
                     </label>
                     <svg class="modal__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-email-modal"></use>
                 </div>
                 
                 <div class="modal__field">                  
-                    <textarea name="feedback" rows="5" placeholder="Введите текст" 
+                    <textarea name="feedback" rows="5" placeholder="Введіть текст" 
                     id="order-comments" class="modal__comments"></textarea>
                     <label for="order-comments" class="modal__label">
-                        Комментарий
+                        Коментар
                     </label>
                 </div>
                 <div class="modal__field checkbox">
                     <label name="order-checkbox" class="checkbox__label">
                         <input type="checkbox" name="order-checkbox" id="order-checkbox" class="checkbox__order">
                         <span class="checkbox__icon"></span>
-                        <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю</span>
-                        <a href="" class="checkbox__link link">Условия договора</a>
+                        <span class="checkbox__text">Погоджуюся з розсилкою та приймаю</span>
+                        <a href="" class="checkbox__link link">Умови договору</a>
                     </label>
                 </div>
                 <div class="button-container">
-                    <button type="submit" class="modal__button">Отправить</button>
+                    <button type="submit" class="modal__button">Відправити</button>
                 </div>
             </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

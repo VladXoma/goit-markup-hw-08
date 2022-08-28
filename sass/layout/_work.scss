@@ -1,9 +1,9 @@
 .work {
     text-align: center;
     padding-top: 0;
-    .work__title {
-        margin-bottom: 50px;
-        }
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .work-list {
@@ -21,7 +21,7 @@
     bottom: 0;
 
     width: 100%;
-    padding: 27px;
+    padding: 27px 0;
 
     background: getColor('work-list-title-bg-color');
     color: getColor('white-text-color');
@@ -29,9 +29,4 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-
-.team-title,
-.clients-title {
-    margin-bottom: 50px;
 }

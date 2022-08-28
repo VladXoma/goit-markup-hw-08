@@ -1,15 +1,28 @@
 .features__title {
-    font-size: 36px;
-    line-height: 1.17;
+    @include fontStyle(36px, 1.17, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .features__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
     
 }
 .features-cards {
-    
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &:not(:last-child) {
+            padding-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 15px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 6 * 15px) / 4);
+    }
 }
 
 
@@ -25,21 +38,18 @@
     justify-content: center;
     background: getColor('secondary-bg-color');
     border-radius: 4px;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 }
 .features-cards__title {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include fontStyle(14px, 1.14, 0.03em);
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 .features-cards__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include fontStyle(14px, 1.71, 0.03em);
     color: getColor('secondary-text-color');
     margin-bottom: 0;
 }
