@@ -2,10 +2,12 @@
     position: fixed;
     top: 0;
     left: 0;
+    padding: 100px 50px;
     background: getColor('backdrop-modal-bg-color');
     height: 100%;
     width: 100%;
     opacity: 1;
+    overflow-y: scroll;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &.is-hidden {
             visibility: hidden;
@@ -17,10 +19,9 @@
     }
 }
 
-
-
 .modal {
     position: absolute;
+    z-index: 3;
     top: 50%;
     left: 50%;
     min-width: 528px;

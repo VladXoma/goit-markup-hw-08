@@ -1,11 +1,15 @@
 .portfolio-filter {
     display: flex;
     flex-wrap: wrap;
+    width: 326px;
     margin-bottom: 40px;
     column-gap: 8px;
-    justify-content: center;
+    row-gap: 15px;
+    
     @media screen and (min-width: 768px) {
+        width: 100%;
         margin-bottom: 30px;
+        justify-content: center;
     }
         @media screen and (min-width: 1200px) {
             margin-bottom: 50px;
@@ -13,8 +17,6 @@
 }
 
 .portfolio-filter__button {
-    /* width: 128px;
-  height: 38px; */
     padding: 6px 22px;
 
     font-family: inherit;
@@ -29,22 +31,30 @@
 .project-list {
     @media screen and (max-width: 767px) {
         display: block;
-        margin-right: auto;
-        margin-left: auto;
     }
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: calc((100%-30px*2)/3);
+        gap: 30px;
     }
-    
 
-    // gap: 30px;
-    
 }
 
 .project-card {
-    width: 370px;
+    // width: 370px;
+    
+    @media screen and (max-width: 767px) {
+            margin-left: auto;
+            margin-right: auto;
+            &:not(:last-child) {
+            margin-bottom: 30px;}
+        }
+    @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 1 * 30px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+                    flex-basis: calc((100% - 2 * 30px) / 3);
+                }
     background: getColor('brand-bg-color');
     border: 1px solid getColor('border-color');
     padding-bottom: 20px;
@@ -56,9 +66,7 @@
 }
 
 .project-card__title {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include fontStyle(18px, 2, 0.06em);
     margin-bottom: 4px;
     padding-left: 24px;
 }
@@ -74,8 +82,12 @@
 .project-card__image {
     position: relative;
     overflow: hidden;
+    width: 100%;
     margin-bottom: 20px;
-    z-index: 0;
+    z-index: 1;
+}
+.portfolio-img {
+width: 100%;
 }
 
 .project-card__overlay {
@@ -88,9 +100,7 @@
     padding: 63px 24px;
 
     background: getColor('brand-hover-focus-overlay-color');
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
+    @include fontStyle(18px, 1.56, 0.03em);
 
     color: getColor('white-text-color');
 

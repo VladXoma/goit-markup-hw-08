@@ -89,7 +89,7 @@
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
                                 </p>
-                                <img src="./images/portfolio/project1.jpg" class="portfolio-img" width="370" alt="экран ноутбука с открытым сайтом">
+                                <img src="./images/portfolio/project1.jpg" class="portfolio-img" alt="экран ноутбука с открытым сайтом">
                             </div>
                             <h2 class="project-card__title">Технокряк</h2>
                             <p class="project-card__text">Веб-сайт</p>
@@ -265,16 +265,21 @@
                 </div>
             </div>
             <form class="footer-subscription" name="subscription-form" autocomplete="on">
-                <h2 class="footer-subscription__title">Підпишіться на розсилку</h2>
+                <h2 class="footer-subscription__title">Підпишись на розсилку</h2>
                 <div class="subscription-field">
-                    <label for="sub-email">
-                    </label>
-                    <input class="subscription-field__input" type="email" name="email" placeholder="E-mail" id="sub-email">
-                    <button class="subscription-field__button" type="submit">Підписатися
-                        <svg class="icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
+                    <div>
+                        <label for="sub-email">
+                        </label>
+                        <input class="subscription-field__input" type="email" name="email" placeholder="E-mail"
+                            id="sub-email">
+                    </div>
+                    <div class="btn-container">
+                        <button class="subscription-field__button" type="submit">Підписатися
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
