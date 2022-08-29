@@ -1,8 +1,15 @@
 .logo {
-    @include fontStyle(26px,1.19,0.03em);
+    @include fontStyle(24px,1.08,0.03em);
     font-family: getFontFam(Raleway);
     font-weight: 700;
     color: getColor('accent-color');
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width: 768px) {
+        @include fontStyle(26px, 1.19, 0.03em);
+    }
 }
 
 .header-logo {

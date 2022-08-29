@@ -98,12 +98,25 @@ address {
 }
 
 .logo {
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.08;
   letter-spacing: 0.03em;
   font-family: Raleway;
   font-weight: 700;
   color: #2196f3;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 }
 
 .header-logo .logo__design {
@@ -396,6 +409,7 @@ body {
   padding: 0;
   border: none;
   width: 40px;
+  z-index: 1;
   background-color: transparent;
 }
 .menu-btn .menu-btn__icon-close {
@@ -415,6 +429,11 @@ body {
 
 .menu-container {
   border: 2px solid tomato;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu-container {
+    padding-left: 25px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -442,7 +461,7 @@ body {
   .menu-container {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: #ffffff;
@@ -452,6 +471,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header-links {
     margin-bottom: 302px;
+    padding-top: 48px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -474,8 +494,10 @@ body {
   color: #2196f3;
   position: relative;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header-links__link {
+    display: block;
+    margin-bottom: 32px;
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -504,8 +526,6 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contact-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column-reverse;
   }
 }
@@ -525,6 +545,11 @@ body {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contact-list__item:not(:first-child) {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-list__item:not(:last-child) {
     margin-bottom: 10px;
@@ -560,7 +585,15 @@ body {
     -ms-flex-align: center;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contact-list__link.phone {
+    font-size: 30px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+@media screen and (min-width: 480px) {
   .contact-list__link.phone {
     font-size: 34px;
     line-height: 1.18;
@@ -626,12 +659,24 @@ body {
 
 .heder-socials {
   display: flex;
-  justify-content: center;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 48px;
 }
-.heder-socials:not(:first-child) {
+@media screen and (max-width: 479px) {
+  .heder-socials {
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+}
+.heder-socials .heder-socials__item:not(:first-child) {
   padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
-.heder-socials:not(:last-child) {
+.heder-socials .heder-socials__item:not(:last-child) {
   padding-right: 10px;
 }
 @media screen and (min-width: 768px) {
@@ -968,9 +1013,20 @@ body {
 
 .portfolio-filter {
   display: flex;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
   column-gap: 8px;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-filter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-filter {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-filter__button {
@@ -981,8 +1037,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1022,6 +1078,7 @@ body {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  z-index: 0;
 }
 
 .project-card__overlay {

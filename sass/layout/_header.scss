@@ -23,6 +23,7 @@
     padding: 0;
     border: none;
     width: 40px;
+    z-index: 1;
     background-color: transparent;
     .menu-btn__icon-close {
         display: none;
@@ -39,6 +40,9 @@
 }
 
 .menu-container {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding-left: 25px;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
@@ -58,7 +62,7 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
         width: 100%;
         background-color: getColor('brand-bg-color');
@@ -68,6 +72,7 @@
 .header-links {
     @media screen and (min-width: 320px) and (max-width: 767px) {
         margin-bottom: 302px;
+        padding-top: 48px;
     }
     @media screen and (min-width: 768px) {
         display: flex;
@@ -77,8 +82,6 @@
 
 .header-links__link {
     font-weight: 500;
-
-    
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,8 +92,10 @@
             color: getColor('accent-color');
             position: relative;
         }
-        @media screen and (min-width: 320px) {
-        @include fontStyle(40px, 1.17, 0.02em)
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: block;
+            margin-bottom: 32px;
+            @include fontStyle(40px, 1.17, 0.02em)
     }
         @media screen and (min-width: 768px) {
         @include fontStyle(14px, 1.14, 0.02em);
@@ -112,8 +117,6 @@
     
     @media screen and (min-width: 320px) and (max-width: 767px) {
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column-reverse;
     }
         @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -128,7 +131,11 @@
 
 
 .contact-list__item {
-    
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &:not(:first-child) {
+                margin-bottom: 32px;
+            }
+    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         &:not(:last-child) {
             margin-bottom: 10px;
@@ -159,8 +166,13 @@
     }
         
         &.phone {
-            @media screen and (min-width: 320px) {
-                @include fontStyle(34px, 1.18, 0.02em)}
+            @media screen and (min-width: 320px) and (max-width: 480px) {
+                @include fontStyle(30px, 1.18, 0.02em);
+            color: getColor('accent-color');
+        }
+            @media screen and (min-width: 480px) {
+                @include fontStyle(34px, 1.18, 0.02em);
+            }
             @media screen and (min-width: 768px) {
                 @include fontStyle(12px, 1.17, 0.02em);
             }
@@ -208,13 +220,24 @@
 }
 .heder-socials {
     display: flex;
-    justify-content: center;
-    &:not(:first-child) {
-        padding-left: 10px;
+    @include fontStyle(18px,1.22,0.02em);
+    @media screen and (max-width: 479px) {
+        @include fontStyle(12px, 1.22, 0.02em);
     }
-    &:not(:last-child) {
-        padding-right: 10px;
+    color: getColor('accent-color');
+    margin-bottom: 48px;
+    .heder-socials__item {
+        &:not(:first-child) {
+            padding-left: 10px;
+            border-left: 1px solid rgba(33, 33, 33, 0.2);
+        }
+
+        &:not(:last-child) {
+            padding-right: 10px;
+        }
+
     }
+    
     @media screen and (min-width: 768px) {
         display: none;
     }

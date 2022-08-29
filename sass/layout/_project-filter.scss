@@ -1,8 +1,15 @@
 .portfolio-filter {
     display: flex;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
     column-gap: 8px;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 }
 
 .portfolio-filter__button {
@@ -12,19 +19,28 @@
 
     font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
+    @include fontStyle(16px, 1.63, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       @extend %filter-btn; 
+    @extend %filter-btn; 
 }
 
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc((100%-30px*2)/3);
+    }
+    
+
+    // gap: 30px;
+    
 }
 
 .project-card {
@@ -59,6 +75,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
+    z-index: 0;
 }
 
 .project-card__overlay {
