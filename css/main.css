@@ -465,6 +465,14 @@ body {
   }
 }
 
+.menu-btn__icon-close:hover, .menu-btn__icon-close:focus {
+  fill: #2196f3;
+}
+
+.menu-btn__icon-open:hover, .menu-btn__icon-open:focus {
+  fill: #2196f3;
+}
+
 .menu-container {
   z-index: 1;
 }

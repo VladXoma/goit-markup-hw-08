@@ -41,6 +41,18 @@
         display: none;
     }
 }
+.menu-btn__icon-close {
+    &:hover,
+    &:focus {
+        fill: getColor('accent-color');
+    }
+}
+    .menu-btn__icon-open {
+        &:hover,
+            &:focus {
+                fill: getColor('accent-color');
+            }
+    }
 
 .menu-container {
     z-index: 1;
