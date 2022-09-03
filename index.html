@@ -118,16 +118,30 @@
                 <ul class="work-list list">
                     <li class="work-list__item">
                         <span class="work-list__title">Десктопні додатки</span>
-                        <img src="./images/what_we_do/01_sites.jpg" width="370" alt="Создание сайтов">
+                        <img
+                            srcset="./images/work/01_sites-desk.jpg 1x, 
+                            ./images/work/01_sites-desk-2x.jpg 2x"
+                            src="./images/work/01_sites-desk.jpg" 
+                            width="370" 
+                            alt="Создание сайтов">
                     </li>
                     <li class="work-list__item">
                         <span class="work-list__title">Мобільні додатки</span>
-                        <img src="./images/what_we_do/02_mobile_application.jpg" width="370"
-                            alt="Создание мобильных приложений">
+                        <img 
+                        srcset="./images/work/02_mobile_application-desk.jpg 1x, 
+                            ./images/work/02_mobile_application-desk-2x.jpg 2x"
+                        src="./images/what_we_do/02_mobile_application.jpg" 
+                        width="370"
+                        alt="Создание мобильных приложений">
                     </li>
                     <li class="work-list__item">
                         <span class="work-list__title">Дизайнерські рішення</span>
-                        <img src="./images/what_we_do/03_design.jpg" width="370" alt="Веб дизайн">
+                        <img 
+                        srcset="./images/work/03_design-desk.jpg 1x, 
+                            ./images/work/03_design-desk-2x.jpg 2x"
+                        src="./images/work/03_design-desk.jpg" 
+                        width="370" 
+                        alt="Веб дизайн">
                     </li>
                 </ul>
             </div>
@@ -138,7 +152,26 @@
                 <h2 class="section-title team__title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/our_team/01_igor_demyanenko.jpg" width="270" alt="Игорь Демьяненко">
+                        <picture>
+                            <source
+                                srcset="./images/team/01_igor_demyanenko/01_igor_demyanenko-desk.jpg 1x, 
+                                        ./images/team/01_igor_demyanenko/01_igor_demyanenko-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+                            <source 
+                                srcset="./images/team/01_igor_demyanenko/01_igor_demyanenko-tab.jpg 1x, 
+                                        ./images/team/01_igor_demyanenko/01_igor_demyanenko-tab-2x.jpg 2x"
+                                media="(min-width: 768px)" 
+                            />
+                            <source 
+                                srcset="./images/team/01_igor_demyanenko/01_igor_demyanenko-mob.jpg 1x, 
+                                        ./images/team/01_igor_demyanenko/01_igor_demyanenko-mob-2x.jpg 2x"
+                                media="(max-width: 767px)" 
+                            />
+                        <img class="team-list__img" 
+                        src="./images/team/01_igor_demyanenko/01_igor_demyanenko-mob.jpg" 
+                        alt="Игорь Демьяненко">
+                        </picture>
                         <h3 class="team-list__title">Ігор Дем'яненко</h3>
                         <p class="team-list__desc">Product Designer</p>
                         <ul class="team-socials list">
@@ -173,7 +206,23 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/our_team/02_olga_repina.jpg" width="270" alt="Ольга Репина">
+                        <picture>
+                            <source 
+                                srcset="./images/team/02_olga_repina/02_olga_repina-desk.jpg 1x, 
+                                        ./images/team/02_olga_repina/02_olga_repina-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source 
+                                srcset="./images/team/02_olga_repina/02_olga_repina-tab.jpg 1x, 
+                                        ./images/team/02_olga_repina/02_olga_repina-tab-2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source 
+                                srcset="./images/team/02_olga_repina/02_olga_repina-mob.jpg 1x, 
+                                        ./images/team/02_olga_repina/02_olga_repina-mob-2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img class="team-list__img" 
+                            src="./images/team/02_olga_repina/02_olga_repina-mob.jpg" 
+                            alt="Ольга Репина">
+                        </picture>
                         <h3 class="team-list__title">Ольга Рєпіна</h3>
                         <p lang="en" class="team-list__desc">Frontend Developer</p>
                         <ul class="team-socials list">
@@ -208,7 +257,23 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/our_team/03_mykola_tarasenko.jpg" width="270" alt="Николай Тарасов">
+                        <picture>
+                            <source 
+                                srcset="./images/team/03_mykola_tarasenko/03_mykola_tarasenko-desk.jpg 1x, 
+                                        ./images/team/03_mykola_tarasenko/03_mykola_tarasenko-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source 
+                                srcset="./images/team/03_mykola_tarasenko/03_mykola_tarasenko-tab.jpg 1x, 
+                                        ./images/team/03_mykola_tarasenko/03_mykola_tarasenko-tab-2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source 
+                                srcset="./images/team/03_mykola_tarasenko/03_mykola_tarasenko-mob.jpg 1x, 
+                                        ./images/team/03_mykola_tarasenko/03_mykola_tarasenko-mob-2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                        <img class="team-list__img" 
+                        src="./images/team/03_mykola_tarasenko/03_mykola_tarasenko-mob.jpg" 
+                        alt="Микола Тарасов">
+                        </picture>
                         <h3 class="team-list__title">Микола Тарасов</h3>
                         <p lang="en" class="team-list__desc">Marketing</p>
                         <ul class="team-socials list">
@@ -243,7 +308,23 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__img" src="./images/our_team/04_mikhail_yermakov.jpg" width="270" alt="Михаил Ермаков">
+                        <picture>
+                            <source 
+                                srcset="./images/team/04_mikhail_yermakov/04_mikhail_yermakov-desk.jpg 1x, 
+                                        ./images/team/04_mikhail_yermakov/04_mikhail_yermakov-desk-2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source 
+                                srcset="./images/team/04_mikhail_yermakov/04_mikhail_yermakov-tab.jpg 1x, 
+                                        ./images/team/04_mikhail_yermakov/04_mikhail_yermakov-tab-2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source 
+                                srcset="./images/team/04_mikhail_yermakov/04_mikhail_yermakov-mob.jpg 1x, 
+                                        ./images/team/04_mikhail_yermakov/04_mikhail_yermakov-mob-2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img class="team-list__img" 
+                            src="./images/team/04_mikhail_yermakov/04_mikhail_yermakov-mob.jpg" 
+                            alt="Михаил Ермаков">
+                        </picture>
                         <h3 class="team-list__title">Михайло Єрмаков</h3>
                         <p lang="en" class="team-list__desc">Marketing</p>
                         <ul class="team-socials list">
