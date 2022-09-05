@@ -44,43 +44,52 @@
                     </li>
                 </ul>
                 <button class="menu-open" type="button">
-                    <svg wight="40" height="40" aria-label="Кнопка відкриття мобільного меню">
+                    <svg width="40" height="40" aria-label="Кнопка відкриття мобільного меню">
                         <use class="menu-btn__icon-open" href="./images/icons.svg#icon-open-menu"></use>
                     </svg>
                 </button>
             </div>
-            <div class="mob-menu">
-                <button class="menu-close" type="button">
-                    <svg wight="40" height="40" aria-label="Кнопка закриття мобільного меню">
-                        <use class="menu-btn__icon-close" href="./images/icons.svg#icon-close-menu"></use>
-                    </svg>
-                </button>
-                    <nav class="mob-menu-nav">
-                        <ul class="mob-menu-links list">
-                            <li class="mob-menu-links__item"> 
-                                <a class="mob-menu-links__link link current" href="./index.html">Студія</a></li>
-                            <li class="mob-menu-links__item"> 
-                                <a class="mob-menu-links__link link" href="./portfolio.html">Портфоліо</a></li>
-                            <li class="mob-menu-links__item"> 
-                                <a class="mob-menu-links__link link" href="">Контакти</a></li>
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu--top">
+                        <button class="menu-close" type="button">
+                            <svg width="40" height="40" aria-label="Кнопка закриття мобільного меню">
+                                <use class="menu-btn__icon-close" href="./images/icons.svg#icon-close-menu"></use>
+                            </svg>
+                        </button>
+                        <nav class="mob-menu-nav">
+                            <ul class="mob-menu-links list">
+                                <li class="mob-menu-links__item">
+                                    <a class="mob-menu-links__link link current" href="./index.html">Студія</a>
+                                </li>
+                                <li class="mob-menu-links__item">
+                                    <a class="mob-menu-links__link link" href="./portfolio.html">Портфоліо</a>
+                                </li>
+                                <li class="mob-menu-links__item">
+                                    <a class="mob-menu-links__link link" href="">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mob-menu--bottom">
+                        <ul class="mob-menu-contact list">
+                            <li class="mob-menu-contact__item">
+                                <a class="mob-menu-contact__link phone link" href="tel:+380961111111">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-menu-contact__item">
+                                <a class="mob-menu-contact__link email link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
                         </ul>
-                    </nav>
-                    <ul class="mob-menu-contact list">
-                        <li class="mob-menu-contact__item">
-                            <a class="mob-menu-contact__link phone link" href="tel:+380961111111">
-                                +38 096 111 11 11</a>
-                        </li>
-                        <li class="mob-menu-contact__item">
-                            <a class="mob-menu-contact__link email link" href="mailto:info@devstudio.com">
-                                info@devstudio.com</a>
-                        </li>
-                    </ul>
-                    <ul class="heder-socials list">
-                        <li class="heder-socials__item"><a class="link" href="#">Instagram</a></li>
-                        <li class="heder-socials__item"><a class="link" href="#">Twitter</a></li>
-                        <li class="heder-socials__item"><a class="link" href="#">Facebook</a></li>
-                        <li class="heder-socials__item"><a class="link" href="#">LinkedIn</a></li>
-                    </ul>
+                        <ul class="header-socials list">
+                            <li class="heder-socials__item"><a class="link" href="#">Instagram</a></li>
+                            <li class="heder-socials__item"><a class="link" href="#">Twitter</a></li>
+                            <li class="heder-socials__item"><a class="link" href="#">Facebook</a></li>
+                            <li class="heder-socials__item"><a class="link" href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
