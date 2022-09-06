@@ -3,16 +3,25 @@
     font-family: getFontFam(Raleway);
     font-weight: 700;
     color: getColor('accent-color');
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
     @media screen and (min-width: 768px) {
-        @include fontStyle(26px, 1.19, 0.03em);
+        @include fontStyle(24px, 1.17, 0.03em);
     }
+        @media screen and (min-width: 1200px) {
+            @include fontStyle(26px, 1.19, 0.03em);
+        }
 }
 
 .header-logo {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+                @media screen and (min-width: 768px) {
+                margin-right: 88px;
+                }
+                                @media screen and (min-width: 1200px) {
+                                    margin-right: 92px;
+                                }
     .logo__design {
             color: getColor('header-logo-design');
         }

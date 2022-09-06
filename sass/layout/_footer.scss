@@ -49,11 +49,14 @@ margin-bottom: 60px;
         }
 }
 .footer-social__title {
-    padding-top: 12px;
+    
     margin-bottom: 20px;
     @include fontStyle(14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: getColor('white-text-color');
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+        }
 }
 
 .footer-social__list {
@@ -88,11 +91,14 @@ margin-bottom: 60px;
     text-align: left;
 }
     .footer-subscription__title {
-            padding-top: 12px;
+            
             margin-bottom: 20px;
             @include fontStyle(14px, 1.14, 0.03em);
             text-transform: uppercase;
             color: getColor('white-text-color');
+            @media screen and (min-width: 1200px) {
+                    padding-top: 12px;
+                }
         }
     .subscription-field {
         
